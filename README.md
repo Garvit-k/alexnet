@@ -1,9 +1,8 @@
 # AlexNet 
 ### A Convolutional Neural Network created by Alex Krizhevsky
 
-```
+
 ![Architecture Diagram](https://raw.githubusercontent.com/Garvit-k/alexnet/master/architechture.png)
-```
 
 ## Notes :
  
