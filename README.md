@@ -40,11 +40,21 @@
   ## Activation function :
     ReLU (Rectified Linear Units) Non-linear as it trained faster than tanh units
   
-      The activation function is responsible for transforming the summed weighted input from the node into the 
-       activation of the node or output for that input
-  
+    The activation function is responsible for transforming
+    the summed weighted input from the node into the 
+    activation of the node or output for that input
+  ```
     ReLu Formula : F(x) = max(0.0,x)    
-## Convolutional Layers :
+ ```
+ 
+## Convolutional Layers :  
+
+     Convolution is the first layer to extract features from an input image.
+     Convolution preserves the relationship between pixels by learning image features using small squares of input data.
+     It is a mathematical operation that takes two inputs such as image matrix and a filter or kernel
+
+  
+  
  ### 1st Convolutional Layer :
   Kernels - 96 
   
@@ -82,6 +92,8 @@
  
  Size - 3x3x192
 
+Max Pooling Layer
+
 ## Fully  Connected Layer :
  Number of Neurons : 4096
- 
+ 2 Layers in series after convolutional layers
