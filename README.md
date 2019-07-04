@@ -96,4 +96,5 @@ Max Pooling Layer
 
 ## Fully  Connected Layer :
  Number of Neurons : 4096
+
  2 Layers in series after convolutional layers
