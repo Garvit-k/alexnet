@@ -14,11 +14,11 @@
   
   Trained on 2 GTX 580 GPU
   
-  References :
-  
+ ### References :  
 
  - https://www.cs.toronto.edu/~kriz/imagenet_classification_with_deep_convolutional.pdf
  - https://www.learnopencv.com/understanding-alexnet/
+ - https://adeshpande3.github.io/adeshpande3.github.io/A-Beginner's-Guide-To-Understanding-Convolutional-Neural-Networks/
 
   ## Input :
   256x256 sized RGB image
@@ -53,6 +53,7 @@
      Convolution preserves the relationship between pixels by learning image features using small squares of input data.
      It is a mathematical operation that takes two inputs such as image matrix and a filter or kernel
 
+    ReLU activation function used for every conv layers
   
   
  ### 1st Convolutional Layer :
@@ -92,9 +93,30 @@
  
  Size - 3x3x192
 
-Max Pooling Layer
+
+## Max Pooling Layer :
+ It is done to downsample the output which helps in reducing overfitting.
+ 
+ This basically takes a filter and a stride of the same length. It then applies it to the 
+ input volume and outputs the maximum number in every subregion that the filter convolves around.
+
 
 ## Fully  Connected Layer :
  Number of Neurons : 4096
 
- 2 Layers in series after convolutional layers
+ 2 Layers in series after convolutional layers both followed by dropout layer
+ then last fully connected layer is outputed to 1000 way softmax 
+ 
+ This layer looks at the output of previous layer and 
+ then determines which features correlates to particular class
+ 
+## Dropout :
+ This layer "drops out" a random set of activations in that layer by setting them to zero.
+ This helps in alleviating overfitting problem.
+
+## 1000 way softmax :
+ This is a tuple of 1000 elements each representing a particular class
+ This is used to get the probablity of correctness of a particular class
+ We select the highest probablity to determine the prediction of the neural net
+
+

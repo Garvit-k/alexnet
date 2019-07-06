@@ -1,5 +1,5 @@
-# Creation date : 03 - 07 - 2019
-# author - Garvit Kothari
+# Created by Garvit Kothari at 03-07-2019
+# Project Name : alexnet
 
 # importing tensorflow and numpy
 import tensorflow as tf
@@ -29,3 +29,9 @@ def RNL(x, R, alpha, beta, name = None, bias = 1.0):
 # dropout
 def dropout(x, keepPro, name = None):
     return tf.nn.dropout(x, keepPro, name)
+
+
+
+
+if __name__ == '__main__':
+    pass
