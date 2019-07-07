@@ -114,6 +114,8 @@
  This layer "drops out" a random set of activations in that layer by setting them to zero.
  This helps in alleviating overfitting problem.
 
+ Dorpout rate 0.5
+
 ## 1000 way softmax :
  This is a tuple of 1000 elements each representing a particular class
  This is used to get the probablity of correctness of a particular class
