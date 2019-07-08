@@ -118,7 +118,9 @@
 
 ## 1000 way softmax :
  This is a tuple of 1000 elements each representing a particular class
+
  This is used to get the probablity of correctness of a particular class
+
  We select the highest probablity to determine the prediction of the neural net
 
 
