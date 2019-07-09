@@ -45,7 +45,7 @@
     activation of the node or output for that input
   ```
     ReLu Formula : F(x) = max(0.0,x)    
- ```
+  ```
  
 ## Convolutional Layers :  
 
@@ -122,5 +122,4 @@
  This is used to get the probablity of correctness of a particular class
 
  We select the highest probablity to determine the prediction of the neural net
-
 
